@@ -14,7 +14,7 @@ Kubernetes Repository: CapstoneProject-Kubernetes
 
 Contains the application code, docker files, and Kubernetes manifests for deployment.
 
-<h1> Architecture Diagram <h1>
+# Architecture Diagram 
     
 Below is a placeholder for the architecture diagram of the deployment:
 
@@ -25,15 +25,16 @@ The architecture includes:
 - Jenkins: Automates CI/CD pipelines.
 - Docker: Builds and packages the application services.
   
-Jobsapp API Services Overview
+# Jobsapp API Services Overview
+
 Services Overview
 
 Auth Service (Authentication and User Management)
 - Base URL: https://api.internsheep.in/auth
 - Endpoints:
--  /register (POST): Register a new user.
--  /login (POST): Authenticate a user and return a JWT token.
--  /protected (GET): Access a protected route requiring JWT.
+ -  /register (POST): Register a new user.
+ -  /login (POST): Authenticate a user and return a JWT token.
+ -  /protected (GET): Access a protected route requiring JWT.
   
 User Service (User Profile and Data Management)
 - Base URL: https://api.internsheep.in/user
