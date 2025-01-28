@@ -1,4 +1,4 @@
-<h1> Capstone Project: Terraform & Kubernetes Deployment <h1>
+# Capstone Project: Terraform & Kubernetes Deployment
 
 This document outlines the implementation details of a fully automated CI/CD pipeline using Jenkins, Terraform, and Kubernetes. It also provides details about the JobsApp project, which consists of three main services: Auth Service, User Service, and Company Service. These services manage user authentication, profile details, and company information.
 
@@ -13,44 +13,56 @@ Responsible for provisioning the required cloud infrastructure.
 Kubernetes Repository: CapstoneProject-Kubernetes
 
 Contains the application code, docker files, and Kubernetes manifests for deployment.
-Architecture Diagram
+
+<h1> Architecture Diagram <h1>
+    
 Below is a placeholder for the architecture diagram of the deployment:
 
 The architecture includes:
 
-Terraform: Provisions the cloud infrastructure.
-Kubernetes: Manages the JobsApp application containers.
-Jenkins: Automates CI/CD pipelines.
-Docker: Builds and packages the application services.
+- Terraform: Provisions the cloud infrastructure.
+- Kubernetes: Manages the JobsApp application containers.
+- Jenkins: Automates CI/CD pipelines.
+- Docker: Builds and packages the application services.
+  
 Jobsapp API Services Overview
 Services Overview
+
 Auth Service (Authentication and User Management)
-Base URL: https://api.internsheep.in/auth
-Endpoints:
-/register (POST): Register a new user.
-/login (POST): Authenticate a user and return a JWT token.
-/protected (GET): Access a protected route requiring JWT.
+- Base URL: https://api.internsheep.in/auth
+- Endpoints:
+-  /register (POST): Register a new user.
+-  /login (POST): Authenticate a user and return a JWT token.
+-  /protected (GET): Access a protected route requiring JWT.
+  
 User Service (User Profile and Data Management)
-Base URL: https://api.internsheep.in/user
-Endpoints:
-/profile (POST/GET): Create, update, or fetch a user profile.
-/profile/:id (GET): Get a specific profile by ID.
-/profile/education (POST): Add education details.
-/profile/work (POST): Add work experience.
+- Base URL: https://api.internsheep.in/user
+- Endpoints:
+ - /profile (POST/GET): Create, update, or fetch a user profile.
+ - /profile/:id (GET): Get a specific profile by ID.
+ - /profile/education (POST): Add education details.
+ - /profile/work (POST): Add work experience.
+   
 Company Service (Company Management)
-Base URL: https://api.internsheep.in/company
-Endpoints:
-/ (POST/GET/DELETE): Create, update, fetch, or delete a company.
-/logo (POST): Upload a company logo.
+
+- Base URL: https://api.internsheep.in/company
+- Endpoints:
+  -/ (POST/GET/DELETE): Create, update, fetch, or delete a company.
+  -/logo (POST): Upload a company logo.
+  
 Environment Variables
+
 Auth Service
-Variable	Description	Example
-PORT	The port on which the service runs	5000
-MONGO_URI	MongoDB connection string	mongodb://mongo:27017/intsheep
-JWT_SECRET	Secret key for signing JWT tokens	someshittyjwttokenisbeingused
-REDIS_HOST	Redis server hostname	redis
-REDIS_PORT	Redis server port	6379
-KAFKA_BROKERS	Kafka broker connection string	kafka:9092
+
+| Variable       | Description                        | Example                          |
+| -------------- | ---------------------------------- | -------------------------------- |
+| PORT           | The port on which the service runs | `5000`                           |
+| MONGO_URI      | MongoDB connection string          | `mongodb://mongo:27017/intsheep` |
+| JWT_SECRET     | Secret key for signing JWT tokens  | `someshittyjwttokenisbeingused`  |
+| REDIS_HOST     | Redis server hostname              | `redis`                          |
+| REDIS_PORT     | Redis server port                  | `6379`                           |
+| KAFKA_BROKERS  | Kafka broker connection string     | `kafka:9092`                     |
+
 User Service
 Variable	Description	Example
 PORT	The port on which the service runs	5001
