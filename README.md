@@ -53,10 +53,10 @@ This document outlines the implementation details of a fully automated CI/CD pip
 
 The deployment repository is split into two parts:
 
-1. **Terraform Repository**: [CapstoneProject-Terraform](https://github.com/arpit1605/CapstoneProject-Terraform.git)
+1. **Terraform Repository**: [CapstoneProject-Terraform](https://github.com/ram1605/CapstoneProject-Terraform.git)
    - Responsible for provisioning the required cloud infrastructure.
 
-2. **Kubernetes Repository**: [CapstoneProject-Kubernetes](https://github.com/arpit1605/CapstoneProject-Kubernetes.git)
+2. **Kubernetes Repository**: [CapstoneProject-Kubernetes](https://github.com/ram1605/CapstoneProject-Kubernetes.git)
    - Contains the application code, docker files, and Kubernetes manifests for deployment.
 
 
