@@ -38,9 +38,10 @@ Technical Requirements:
 - Use Docker Compose to run the services.
 
 - Objectives:
-- Provide a seamless and secure experience for users to manage their authentication, profiles, and company details.
-- Ensure scalability and maintainability by using microservices architecture.
-- Enhance developer productivity with clear API documentation.
+ - Provide a seamless and secure experience for users to manage their authentication, profiles, and company details.
+ - Ensure scalability and maintainability by using microservices architecture.
+ - Enhance developer productivity with clear API documentation.
+  
 This project aims to streamline the management of internships, offering a robust and user-friendly platform for students and companies alike.
 
 # Capstone Project: Terraform & Kubernetes Deployment
