@@ -20,11 +20,13 @@ Requirements:
 - Create, update, and retrieve company profiles for users with a company role.
 - Allow company logo uploads and deletion of company profiles.
   
-  Key Functionalities to Implement:
+Key Functionalities to Implement:
+
 - Secure endpoints using JWT tokens.
 - Implement CRUD operations for user and company profiles.
 - Provide error handling for common issues like invalid tokens, missing data, or user not found.
 - Ensure that the API endpoints are well-documented and accessible for integration with frontend applications.
+
 Technical Requirements:
 
 - Environment Variables:
