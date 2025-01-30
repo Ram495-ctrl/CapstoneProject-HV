@@ -5,20 +5,20 @@ Design and develop a comprehensive internship management platform called Interns
 Requirements:
 1. Auth Service:
 
-  - Register new users and authenticate existing users.
-  - Generate and validate JWT tokens to secure protected routes.
-  - Handle error cases like user already existing, invalid credentials, or missing authorization headers.
+    - Register new users and authenticate existing users.
+    - Generate and validate JWT tokens to secure protected routes.
+    - Handle error cases like user already existing, invalid credentials, or missing authorization headers.
   
 2. User Service:
 
-  - Create, update, and retrieve user profiles, including optional profile picture uploads.
-  - Manage user education and work experience entries.
-  - Provide endpoints for uploading and retrieving user resumes.
+    - Create, update, and retrieve user profiles, including optional profile picture uploads.
+    - Manage user education and work experience entries.
+    - Provide endpoints for uploading and retrieving user resumes.
 
 3. Company Service:
 
-  - Create, update, and retrieve company profiles for users with a company role.
-  - Allow company logo uploads and deletion of company profiles.
+    - Create, update, and retrieve company profiles for users with a company role.
+    - Allow company logo uploads and deletion of company profiles.
   
 Key Functionalities to Implement:
 
