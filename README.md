@@ -44,7 +44,7 @@ Technical Requirements:
   
 This project aims to streamline the management of internships, offering a robust and user-friendly platform for students and companies alike.
 
-# Capstone Project: Terraform & Kubernetes Deployment
+# Solution of the Capstone Project: Terraform & Kubernetes Deployment
 
 This document outlines the implementation details of a fully automated CI/CD pipeline using Jenkins, Terraform, and Kubernetes. It also provides details about the **JobsApp** project, which consists of three main services: Auth Service, User Service, and Company Service. These services manage user authentication, profile details, and company information.
 
